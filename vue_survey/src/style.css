@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  body{
+    @apply bg-wht text-base font-Poppins
+  }
+  img,picture,svg{
+    max-width: 100%;
+    @apply block
+  }
+}
