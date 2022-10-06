@@ -61,9 +61,15 @@ const user = ref({
 });
 
 function register() {
-  store.dispatch("register", user.value).then((res) => {
-    router.push({ name: "Dashboard" });
-  });
+  store
+    .dispatch("register", user.value)
+    .then((res) => {
+      //router.push({ name: "Dashboard" });
+      console.log(res);
+    })
+    .catch((err) => {
+      console.log("heello", err);
+    });
 }
 </script>
 
